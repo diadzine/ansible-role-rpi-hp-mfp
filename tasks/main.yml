@@ -1,0 +1,16 @@
+---
+# tasks file for ansible-role-rpi-hp-mfp
+
+- name: Upgrade distribution
+  apt:
+    update_cache=yes
+    upgrade=dist
+    cache_valid_time=1800
+  when: raspberry_pi_update_packages
+
+- name: Install packages
+  apt:
+    pkg="{{ item }}"
+    state=latest
+  with_items:
+    - "{{ apt_packages }}"

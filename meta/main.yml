@@ -1,0 +1,19 @@
+---
+galaxy_info:
+  author: Aymeric Bringard
+  description: Configure HP multifunction printer on Raspberry Pi Raspbian server.
+  company: "Aymeric Bringard, Conseil & Developpements"
+  license: license (MIT)
+  min_ansible_version: 1.9
+  platforms:
+  - name: Raspbian
+    versions:
+    - jessie
+
+  galaxy_tags:
+    - system
+    - printer
+    - hp
+    - hplip
+
+dependencies: []

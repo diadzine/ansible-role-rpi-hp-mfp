@@ -1,0 +1,12 @@
+---
+# defaults file for ansible-role-rpi-hp-mfp
+
+raspberry_pi_update_packages: yes
+
+apt_packages:
+  - avahi-daemon
+  - cups
+  - cups-pdf
+  - python-cups
+  - hplip
+  - sane
