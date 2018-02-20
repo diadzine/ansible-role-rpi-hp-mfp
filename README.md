@@ -3,7 +3,7 @@ Ansible Role: RPi HP Multifunction Printer
 
 [![Build Status](https://travis-ci.org/diadzine/ansible-role-rpi-hp-mfp.svg?branch=master)](https://travis-ci.org/diadzine/ansible-role-rpi-hp-mfp)
 
-Ansible role for Raspbian-based Raspberry Pi machines configuration.
+Ansible role to install Cups and hplip on Raspbian-based Raspberry Pi machines.
 
 Requirements
 ------------
@@ -15,7 +15,19 @@ Role Variables
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
-**TODO**
+    raspberry_pi_update_packages: yes
+
+Boolean to set if you want to run apt update before installing packages.
+
+    apt_packages:
+      - avahi-daemon
+      - cups
+      - cups-pdf
+      - python-cups
+      - hplip
+      - sane
+
+List of packages that will be installed on the system using apt. Here are the default packages.
 
 Dependencies
 ------------
